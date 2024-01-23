@@ -1,0 +1,6 @@
+ünlemsiz: 1
+harfsiz: 1
+rakamsız: 1
+int: 2
+kısa: 3
+veri: 2
