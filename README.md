@@ -23,7 +23,7 @@ Argümanlar:
 
 ```
 
-> [INFO]
+> [ INFO ]
 > Bu proje [Turkce-WordList](https://github.com/utkusen/turkce-wordlist/) ile hazırlanmıştır.
 
 ## Türkçe Wordlist 
