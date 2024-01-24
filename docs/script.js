@@ -63,6 +63,16 @@ function main() {
     }, 3000);
 }
 
+document.getElementById("si").addEventListener("click", () => {
+    document.getElementById("si").style.display = "none";
+    document.getElementById("hi").style.display = "inline-block";
+    document.getElementById("upass").type = "text";
+});document.getElementById("hi").addEventListener("click", () => {
+    document.getElementById("hi").style.display = "none";
+    document.getElementById("si").style.display = "inline-block";
+    document.getElementById("upass").type = "password";
+});
+
 document.getElementById("mainbtn").addEventListener("click", () => {
     loader.style.display = "flex";
     text.innerHTML = "Test ediliyor...";
