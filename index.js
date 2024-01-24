@@ -1,4 +1,3 @@
-
 const { Fore } = require('./colorama');
 const bars = [
     `${Fore.Red}░░░░░░░░░░ 0/10 ${Fore.Underscore}Çok zayıf!${Fore.Reset}`,
@@ -11,7 +10,7 @@ const bars = [
     `${Fore.Yellow}███████░░░ 7/10 ${Fore.Underscore}Biraz teklikeli.${Fore.Reset}`,
     `${Fore.Yellow}████████░░ 8/10 ${Fore.Underscore}Biraz teklikeli.${Fore.Reset}`,
     `${Fore.Green}█████████░ 9/10 ${Fore.Underscore}İyi.${Fore.Reset}`,
-    `${Fore.BrightGreen}██████████ 10/10 ${Fore.Underscore}Mükemel!${Fore.Reset}`,
+    `${Fore.BrightGreen}██████████ 10/10 ${Fore.Underscore}Süperr!${Fore.Reset}`,
 ]
 const fs = require('fs');
 var prompt = require('prompt-sync')();
@@ -21,7 +20,7 @@ const appName = "parolatesti";
 const chars = ["a","b","c","ç","d","e","f","g","h","ğ","ı","i","j","k","l","m","n","o","ö","p","r","s","t","u","ü","v","y","z","x","w"];
 const ints = ["1","2","3","4","5","6","7","8","9","0"];
 
-console.log(Fore.Yellow + '\n\n                   Parolam güçlü mü?' + Fore.Reset);
+console.log(Fore.Yellow + '\n\n                     Parola Testi' + Fore.Reset);
 console.log('    Parolanızın güçlü olup olmadığını kontrol eder.\n');
 if (argv.includes("--help") || argv.includes("?")) {
     console.log(Fore.Green + '    Kullanım: \n' + Fore.Reset + `Winodws: ./${appName}.exe <argümanlar> <parola>\n Linux : ./${appName}-linux <argümanlar> <parola>\n`);
@@ -203,7 +202,7 @@ function main() {
         let cpb = count => {
             process.stdout.clearLine(0);
             process.stdout.cursorTo(0);
-            process.stdout.write(Fore.Green+"█".repeat(count)+Fore.Reset+"▒".repeat(10-count)+` ${count.toString()}%`);
+            process.stdout.write(Fore.Green+"█".repeat(count)+Fore.Reset+"▒".repeat(10-count)+` ${count.toString()}0%`);
         };
         console.log(Fore.Yellow + 'Bilgilendirme: ' + Fore.Reset, 'Sızdırılmış parola verileri taranıyor... (Bu işlem biraz uzun sürebilir.)');
         process.stdout.write(Fore.Green+"█".repeat(0)+Fore.Reset+"▒".repeat(10-0)+` 0%`);
